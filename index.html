@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport"
-        content="width=device-width">
+        content="width=device-width" />
         <title>💒🤵👰결혼합니다💍💐🎉</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -17,10 +17,14 @@
             <img id="couple" src="img/page_01/04_Couple.png">
             <img id="marry" src="img/page_01/05_Marry.png">
             <img id="fieldB" src="img/page_01/06_Field_B.png">
-            <img id="stars" src="img/page_01/07_Stars.png">
+            <img id="starsA" src="img/page_01/07_Stars_A.png">
+            <img id="starsB" src="img/page_01/08_Stars_B.png">
         </div>
         <div class="page-02">
             <img id="bg02" src="img/page_02/01_BG.png">
+            <img id="letterA" src="img/page_02/02_Letter_A.png">
+            <img id="letterB" src="img/page_02/03_Letter_B.png">
+            <img id="letterc" src="img/page_02/04_Letter_C.png">
         </div>
     </body>
 
@@ -31,17 +35,19 @@
         let couple = document.getElementById('couple');
         let marry = document.getElementById('marry');
         let fieldB = document.getElementById('fieldB');
-        let stars = document.getElementById('stars');
+        let starsA = document.getElementById('starsA');
+        let starsB = document.getElementById('starsB');
         
         window.addEventListener('scroll', function(){
             var value = window.scrollY;
-            sky.style.top = value * 1 + 'px';
+            sky.style.top = value * 0.9 + 'px';
             cloud.style.top = value * 0.8 + 'px';
             fieldA.style.top = value * 0.53 + 'px';
             couple.style.top = value * 0.5 + 'px';
-            marry.style.top = value * 0.5 + 'px';
-            fieldB.style.top = value * 0.48 + 'px';
-            stars.style.top = value * 0.3 + 'px';
+            marry.style.top = value * 0.7 + 'px';
+            fieldB.style.top = value * 0.4 + 'px';
+            starsA.style.top = value * 0.3 + 'px';
+            starsB.style.top = value * 0.05 + 'px';
         })
 
     </script>

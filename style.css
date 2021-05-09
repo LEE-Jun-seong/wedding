@@ -1,6 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0 auto;
     background-color: white;
+    width: 1080px;
 }
 
 .page-01{
@@ -26,31 +31,63 @@ body{
     left: 0px;
     z-index: 2;
 }
-#couple{
-    position: absolute;
-    margin-top: 1181px;
-    left: 368px;
-    z-index: 3;
-}
 #marry{
     position: absolute;
     margin-top: 403px;
     left: 494px;
+    z-index: 3;
+}
+#couple{
+    position: absolute;
+    margin-top: 937px;
+    left: 154px;
     z-index: 4;
 }
 #fieldB{
     position: absolute;
-    margin-top: 1413px;
+    margin-top: 1515px;
     left: 0px;
     z-index: 5;
 }
-#stars{
+#starsA{
     position: absolute;
     margin-top: 100px;
     left: 0px;
     z-index: 6;
 }
+#starsB{
+    position: absolute;
+    margin-top: 136px;
+    left: 124px;
+    z-index: 7;
+}
 
 .page-02{
     position: relative;
+    width: 1080px;
+    height: 2400px;
+    overflow: hidden;
+}
+#bg02{
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+#letterA{
+    position: absolute;
+    margin-top: 903px;
+    left: 0px;
+    z-index: 1;
+}
+#letterB{
+    position: absolute;
+    margin-top: 21px;
+    left: 62px;
+    z-index: 2;
+}
+#letterC{
+    position: absolute;
+    margin-top: 1326px;
+    left: 0px;
+    z-index: 3;
 }
