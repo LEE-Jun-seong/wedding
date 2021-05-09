@@ -1,0 +1,56 @@
+body{
+    margin: 0 auto;
+    background-color: blue;
+}
+
+.page-01{
+    position: relative;
+    width: 1080px;
+    height: 2400px;
+    overflow: hidden;
+}
+#sky{
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+#cloud{
+    position: absolute;
+    margin-top: 173px;
+    left: 0px;
+    z-index: 1;
+}
+#fieldA{
+    position: absolute;
+    margin-top: 1372px;
+    left: 0px;
+    z-index: 2;
+}
+#couple{
+    position: absolute;
+    margin-top: 1181px;
+    left: 368px;
+    z-index: 3;
+}
+#marry{
+    position: absolute;
+    margin-top: 403px;
+    left: 494px;
+    z-index: 4;
+}
+#fieldB{
+    position: absolute;
+    margin-top: 1413px;
+    left: 0px;
+    z-index: 5;
+}
+#stars{
+    position: absolute;
+    margin-top: 100px;
+    left: 0px;
+    z-index: 6;
+}
+
+.page-02{
+    position: relative;
+}

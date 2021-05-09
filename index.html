@@ -1,67 +1,48 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<head>
-    <meta charset="UTF-8" content="user-scalable=no" />
-    <title>Hello World!</title>
-    <style>
-        body {
-            margin: 0 auto;
-        }
-        img {
-            max-width: 100%;
-            height: auto !important;
-        }
-        .scene.one .couple {
-            display : block; margin : auto;
-        }
-    </style>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width">
+        <title>💒🤵👰결혼합니다💍💐🎉</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'
-    <section class="scene one">
-        <div class="cloud">
-            <div style="position: absolute;">
-                <div style="position: relative; top: 173px;"><img src="img/01_scene/02_Cloud.png"></img></div>
-            </div>
+    <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+        <div class="page-01">
+            <img id="sky" src="img/page_01/01_Sky.png">
+            <img id="cloud" src="img/page_01/02_Cloud.png">
+            <img id="fieldA" src="img/page_01/03_Field_A.png">
+            <img id="couple" src="img/page_01/04_Couple.png">
+            <img id="marry" src="img/page_01/05_Marry.png">
+            <img id="fieldB" src="img/page_01/06_Field_B.png">
+            <img id="stars" src="img/page_01/07_Stars.png">
         </div>
-        <div class="field_A">
-            <div style="position: absolute;">
-                <div style="position: relative; top: 1372px;"><img src="img/01_scene/03_Field_A.png"></img></div>
-            </div>
+        <div class="page-02">
+            <img id="bg02" src="img/page_02/01_BG.png">
         </div>
-        <div class="couple">
-            <div style="position: absolute;">
-                <div style="position: relative; top: 1181px; left: 50%;"><img src="img/01_scene/04_Couple.png"></img></div>
-            </div>
-        </div>
-        <div class="marry">
-            <div style="position: absolute;">
-                <div style="position: relative; top: 403px; left: 460px;"><img src="img/01_scene/05_Marry.png"></img></div>
-            </div>
-        </div>
-        <div class="field_B">
-            <div style="position: absolute;">
-                <div style="position: relative; top: 1413px;"><img src="img/01_scene/06_Field_B.png"></img></div>
-            </div>
-        </div>
-        <div class="stars">
-            <div style="position: absolute;">
-                <div style="position: relative; top: 100px;"><img src="img/01_scene/07_Stars.png"></img></div>
-            </div>
+    </body>
 
-            <img src="img/01_scene/01_Sky.png">
-        </div>
-    </section>
-    <section class="scene two">
-        <img src="img/02_scene/01_BG.png">
-    </section>
-    <section class="scene three">
+    <script type="text/javascript">
+        let sky = document.getElementById('sky');
+        let cloud = document.getElementById('cloud');
+        let fieldA = document.getElementById('fieldA');
+        let couple = document.getElementById('couple');
+        let marry = document.getElementById('marry');
+        let fieldB = document.getElementById('fieldB');
+        let stars = document.getElementById('stars');
+        
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+            sky.style.top = value * 1 + 'px';
+            cloud.style.top = value * 0.8 + 'px';
+            fieldA.style.top = value * 0.53 + 'px';
+            couple.style.top = value * 0.5 + 'px';
+            marry.style.top = value * 0.5 + 'px';
+            fieldB.style.top = value * 0.48 + 'px';
+            stars.style.top = value * 0.3 + 'px';
+        })
 
-    </section>
-    <section class="scene four">
-        <img src="img/04_scene/page_04.png">
-    </section>
-</body>
-
+    </script>
 </html>
