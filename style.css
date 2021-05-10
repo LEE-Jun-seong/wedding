@@ -11,8 +11,7 @@ body{
 .page-01{
     position: relative;
     width: 1080px;
-    height: 2400px;
-    overflow: hidden;
+    height: 5000px;
 }
 #sky{
     position: relative;
@@ -57,37 +56,31 @@ body{
 }
 #starsB{
     position: absolute;
-    margin-top: 136px;
+    margin-top: 1200px;
     left: 124px;
     z-index: 7;
 }
-
-.page-02{
-    position: relative;
-    width: 1080px;
-    height: 2400px;
-    overflow: hidden;
-}
-#bg02{
-    position: relative;
-    width: 100%;
-    z-index: 0;
+#bgA{
+    position: absolute;
+    margin-top: 2350px;
+    left: 0px;
+    z-index: 8;
 }
 #letterA{
     position: absolute;
-    margin-top: 903px;
+    margin-top: 2800px;
     left: 0px;
-    z-index: 1;
+    z-index: 9;
 }
 #letterB{
     position: absolute;
-    margin-top: 21px;
-    left: 62px;
-    z-index: 2;
+    margin-top: 2800px;
+    left: 42px;
+    z-index: 10;
 }
 #letterC{
     position: absolute;
-    margin-top: 1326px;
+    margin-top: 3223px;
     left: 0px;
-    z-index: 3;
+    z-index: 11;
 }
