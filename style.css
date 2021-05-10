@@ -2,9 +2,9 @@ html {
     scroll-behavior: smooth;
 }
 
-@font-face {
+@font-face{
     font-family: 'MapoGoldenPier';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff')
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff');
     src: format('woff');
     font-weight: normal;
     font-style: normal;
@@ -15,6 +15,7 @@ body{
     margin: 0 auto;
     background-color: white;
     width: 1080px;
+    -webkit-tap-highlight-color : transparent;
 }
 
 .start{
@@ -117,6 +118,8 @@ body{
 .map{
     position: relative;
     width: 1080px;
+    height: 3349px;
+    overflow: hidden;
 }
 #mapcover{
     position: absolute;
@@ -158,4 +161,9 @@ body{
     top: 1895px;
     left: 823px;
     z-index: 4;
+}
+
+.call{
+    position: relative;
+    width: 1080px;
 }
