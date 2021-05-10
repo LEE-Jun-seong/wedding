@@ -20,6 +20,7 @@
             <img id="starsA" src="img/page_01/07_Stars_A.png">
             <img id="starsB" src="img/page_01/08_Stars_B.png">
             <img id="bgA" src="img/page_02/01_BG.png">
+
             <img id="letterA" src="img/page_02/02_Letter_A.png">
             <img id="letterB" src="img/page_02/03_Letter_B.png">
             <img id="letterC" src="img/page_02/04_Letter_C.png">
@@ -29,12 +30,21 @@
         </div>
         <div class="calendar">
             <img id="calendar" src="img/page_04/calendar.png">
-            <h1 id="countdn"><div id="newcountdown"></div><br>후에 결혼합니다</h1>
+            <h1 id="countdn"><div id="newcountdown"></div><br>후에 결혼합니다.</h1>
         </div>
         <div class="map">
             <img id="mapcover" src="img/page_05/map_page.png">
             <img id="mapname" src="img/page_05/Map_name.png">
             <img id="map" src="img/page_05/Map.png">
+            <a id="google" href="https://goo.gl/maps/71YMJEkAUswksT5z8">
+                <img src="img/page_05/googlemaps.png">
+            <a id="naver" href="http://naver.me/xNdpQnIi">
+                    <img src="img/page_05/navermap.png">
+            <a id="kakao" href="https://place.map.kakao.com/23553867">
+                <img src="img/page_05/kakaomap.png">
+            <a id="tmap" href="https://place.map.kakao.com/23553867">
+                <img src="img/page_05/tmap.png">
+            </a>
         </div>
     </body>
 
@@ -56,8 +66,8 @@
             var value = window.scrollY;
             sky.style.top = value * 0.7 + 'px';
             cloud.style.top = value * 0.6 + 'px';
-            fieldA.style.top = value * 0.28 + 'px';
-            couple.style.top = value * 0.2 + 'px';
+            fieldA.style.top = value * 0.3 + 'px';
+            couple.style.top = value * 0.1 + 'px';
             marry.style.top = value * 0.5 + 'px';
             starsA.style.top = value * -0.5 + 'px';
             starsB.style.top = value * -1 + 'px';
@@ -66,9 +76,7 @@
             mapname.style.top = value * 0.48 + 'px';
             map.style.top = value * 0.5 + 'px';
         })
-    </script>
-
-    <script type="text/javascript">
+        
         CountDownTimer('06/19/2021 12:00 AM', 'newcountdown');
         
         function CountDownTimer(dt, id){
@@ -86,7 +94,7 @@
                 if (distance < 0) {
 
                     clearInterval(timer);
-                    document.getElementById(id).innerHTML = '축하해주셔서 감사합니다!';
+                    document.getElementById(id).innerHTML = '축하해주셔서 감사합니다.';
 
                     return;
                 }

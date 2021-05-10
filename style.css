@@ -20,7 +20,7 @@ body{
 .start{
     position: relative;
     width: 1080px;
-    height: 3900px;
+    height: 4100px;
 }
 #sky{
     position: relative;
@@ -75,21 +75,22 @@ body{
     left: 0px;
     z-index: 8;
 }
+
 #letterA{
     position: absolute;
-    margin-top: 2600px;
+    margin-top: 2800px;
     left: 0px;
     z-index: 9;
 }
 #letterB{
     position: absolute;
-    margin-top: 2400px;
+    margin-top: 2800px;
     left: 42px;
     z-index: 10;
 }
 #letterC{
     position: absolute;
-    margin-top: 3023px;
+    margin-top: 3223px;
     left: 0px;
     z-index: 11;
 }
@@ -133,4 +134,28 @@ body{
     margin-top: -3000px;
     left: 0px;
     z-index: 1;
+}
+#google{
+    position: absolute;
+    top: 1895px;
+    left: 78px;
+    z-index: 4;
+}
+#naver{
+    position: absolute;
+    top: 1895px;
+    left: 327px;
+    z-index: 4;
+}
+#kakao{
+    position: absolute;
+    top: 1895px;
+    left: 575px;
+    z-index: 4;
+}
+#tmap{
+    position: absolute;
+    top: 823px;
+    left: 575px;
+    z-index: 4;
 }
