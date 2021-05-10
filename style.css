@@ -20,7 +20,7 @@ body{
 .start{
     position: relative;
     width: 1080px;
-    height: 4100px;
+    height: 3900px;
 }
 #sky{
     position: relative;
@@ -77,19 +77,19 @@ body{
 }
 #letterA{
     position: absolute;
-    margin-top: 2800px;
+    margin-top: 2600px;
     left: 0px;
     z-index: 9;
 }
 #letterB{
     position: absolute;
-    margin-top: 2800px;
+    margin-top: 2400px;
     left: 42px;
     z-index: 10;
 }
 #letterC{
     position: absolute;
-    margin-top: 3223px;
+    margin-top: 3023px;
     left: 0px;
     z-index: 11;
 }
