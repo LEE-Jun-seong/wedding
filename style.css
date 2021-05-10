@@ -2,16 +2,25 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: 'MapoGoldenPier';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff')
+    src: format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
+    font-family: 'MapoGoldenPier';
     margin: 0 auto;
     background-color: white;
     width: 1080px;
 }
 
-.page-01{
+.start{
     position: relative;
     width: 1080px;
-    height: 5000px;
+    height: 4100px;
 }
 #sky{
     position: relative;
@@ -83,4 +92,45 @@ body{
     margin-top: 3223px;
     left: 0px;
     z-index: 11;
+}
+
+.calendar{
+    background: rgb(255, 255, 255);
+    position: relative;
+    width: 1080px;
+    height: 2100px;
+    left: 0px;
+    z-index: 12;
+}
+#countdn{
+    text-align: center;
+    font-size: 48px;
+    color: #5f4b4b;
+    top: 1600px;
+    z-index: 13;
+}
+#newcountdown{
+    font-size: 64px;
+}
+
+.map{
+    position: relative;
+    width: 1080px;
+}
+#mapcover{
+    position: absolute;
+    left: 0px;
+    z-index: 3;
+}
+#mapname{
+    position: absolute;
+    margin-top: -2890px;
+    left: 0px;
+    z-index: 2;
+}
+#map{
+    position: absolute;
+    margin-top: -3000px;
+    left: 0px;
+    z-index: 1;
 }

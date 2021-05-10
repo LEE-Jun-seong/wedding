@@ -10,7 +10,7 @@
     </head>
 
     <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
-        <div class="page-01">
+        <div class="start">
             <img id="sky" src="img/page_01/01_Sky.png">
             <img id="cloud" src="img/page_01/02_Cloud.png">
             <img id="fieldA" src="img/page_01/03_Field_A.png">
@@ -23,6 +23,18 @@
             <img id="letterA" src="img/page_02/02_Letter_A.png">
             <img id="letterB" src="img/page_02/03_Letter_B.png">
             <img id="letterC" src="img/page_02/04_Letter_C.png">
+        </div>
+        <div class="gallary">
+
+        </div>
+        <div class="calendar">
+            <img id="calendar" src="img/page_04/calendar.png">
+            <h1 id="countdn"><div id="newcountdown"></div><br>후에 결혼합니다</h1>
+        </div>
+        <div class="map">
+            <img id="mapcover" src="img/page_05/map_page.png">
+            <img id="mapname" src="img/page_05/Map_name.png">
+            <img id="map" src="img/page_05/Map.png">
         </div>
     </body>
 
@@ -37,6 +49,9 @@
         let starsB = document.getElementById('starsB');
         let letterB = document.getElementById('letterB');
         
+        let mapname = document.getElementById('mapname');
+        let map = document.getElementById('map');
+        
         window.addEventListener('scroll', function(){
             var value = window.scrollY;
             sky.style.top = value * 0.7 + 'px';
@@ -47,7 +62,48 @@
             starsA.style.top = value * -0.5 + 'px';
             starsB.style.top = value * -1 + 'px';
             letterB.style.top = value * -0.5 + 'px';
+            
+            mapname.style.top = value * 0.48 + 'px';
+            map.style.top = value * 0.5 + 'px';
         })
-
     </script>
+
+    <script type="text/javascript">
+        CountDownTimer('06/19/2021 12:00 AM', 'newcountdown');
+        
+        function CountDownTimer(dt, id){
+            var end = new Date(dt);
+
+            var _second = 1000;
+            var _minute = _second * 60;
+            var _hour = _minute * 60;
+            var _day = _hour * 24;
+            var timer;
+
+            function showRemaining() {
+                var now = new Date();
+                var distance = end - now;
+                if (distance < 0) {
+
+                    clearInterval(timer);
+                    document.getElementById(id).innerHTML = '축하해주셔서 감사합니다!';
+
+                    return;
+                }
+
+                var days = Math.floor(distance / _day);
+                var hours = Math.floor((distance % _day) / _hour);
+                var minutes = Math.floor((distance % _hour) / _minute);
+                var seconds = Math.floor((distance % _minute) / _second);
+
+                document.getElementById(id).innerHTML = days + '일 ';
+                document.getElementById(id).innerHTML += hours + '시간 ';
+                document.getElementById(id).innerHTML += minutes + '분 ';
+                document.getElementById(id).innerHTML += seconds + '초';
+            }
+
+        timer = setInterval(showRemaining, 1000);
+        }
+    </script>
+
 </html>
