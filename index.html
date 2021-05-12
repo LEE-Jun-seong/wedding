@@ -30,7 +30,7 @@
         </div>
         <div class="calendar">
             <img id="calendar" src="img/page_04/calendar.png">
-            <h1 id="countdn">결혼 시작까지<br><br><div id="newcountdown"></div><br>남았습니다.</h1>
+            <div id="countdn">결혼 시작까지<br><br><div id="newcountdown"></div><br>남았습니다.</div>
         </div>
 
         <div class="map">
@@ -82,7 +82,7 @@
             map.style.top = value * 0.5 + 'px';
         })
         
-        CountDownTimer('06/19/2021 12:00 AM', 'newcountdown');
+        CountDownTimer('06/19/2021 12:00', 'newcountdown');
         
         function CountDownTimer(dt, id){
             var end = new Date(dt);
