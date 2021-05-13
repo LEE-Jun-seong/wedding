@@ -70,13 +70,13 @@ body{
     left: 124px;
     z-index: 7;
 }
+
 #bgA{
     position: absolute;
     margin-top: 2350px;
     left: 0px;
     z-index: 8;
 }
-
 #letterA{
     position: absolute;
     margin-top: 2800px;
@@ -94,6 +94,38 @@ body{
     margin-top: 3223px;
     left: 0px;
     z-index: 11;
+}
+
+.gallery{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: white;
+    width: 1080px;
+    height: 1600px;
+    z-index: 15;
+}
+
+.glide__slide img{
+    margin-top: 100px;
+    margin-bottom: 200px;
+    margin-left: 64px;
+    width: 85%;
+}
+.glide__slide{
+    filter: blur(20px);
+    opacity: .5;
+    transition: .15s linear;
+}
+.glide__slide--active{
+    opacity: 1;
+    filter: none;
+    transform: scale(1.2);
+}
+.glide__slides{
+    overflow: visible;
 }
 
 .calendar{
@@ -128,13 +160,13 @@ body{
 }
 #mapname{
     position: absolute;
-    margin-top: -2890px;
+    margin-top: -3740px;
     left: 0px;
     z-index: 2;
 }
 #map{
     position: absolute;
-    margin-top: -3000px;
+    margin-top: -3800px;
     left: 0px;
     z-index: 1;
 }
@@ -166,4 +198,36 @@ body{
 .call{
     position: relative;
     width: 1080px;
+}
+#btn01{
+    position: absolute;
+    top: 304px;
+    left: 122px;
+    opacity: 0;
+}
+#btn02{
+    position: absolute;
+    top: 589px;
+    left: 122px;
+    opacity: 0;
+}
+#callbtn01{
+    position: absolute;
+    top: 1299px;
+    left: 39px;
+}
+#callbtn02{
+    position: absolute;
+    top: 1299px;
+    left: 532px;
+}
+#callbtn03{
+    position: absolute;
+    top: 1492px;
+    left: 39px;
+}
+#callbtn04{
+    position: absolute;
+    top: 1492px;
+    left: 532px;
 }
