@@ -116,8 +116,8 @@ body{
 }
 .glide__slide{
     filter: blur(20px);
-    opacity: .5;
-    transition: .15s linear;
+    opacity: .7;
+    transition: .12s linear;
 }
 .glide__slide--active{
     opacity: 1;
@@ -215,19 +215,23 @@ body{
     position: absolute;
     top: 1299px;
     left: 39px;
+    opacity: 0;
 }
 #callbtn02{
     position: absolute;
     top: 1299px;
     left: 532px;
+    opacity: 0;
 }
 #callbtn03{
     position: absolute;
     top: 1492px;
     left: 39px;
+    opacity: 0;
 }
 #callbtn04{
     position: absolute;
     top: 1492px;
     left: 532px;
+    opacity: 0;
 }
