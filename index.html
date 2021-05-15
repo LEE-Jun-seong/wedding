@@ -62,7 +62,7 @@
 
         <div class="calendar">
             <img id="calendar" src="img/page_04/calendar.png">
-            <div id="countdn">결혼 시작까지<br><br><div id="newcountdown"></div><br>남았습니다.</div>
+            <div id="countdn"><div id="newcountdown"></div></div>
         </div>
 
         <div class="map">
@@ -89,7 +89,7 @@
                 </button>
             </div>
             <div id="btn02">
-                <input value="247120278437" readonly>
+                <input value="3021209528411" readonly>
                 <button onclick="copy_to_clipboard(event)">
                     <img src="img/page_06/btn02.png">
                 </button>
@@ -166,7 +166,7 @@
                 if (distance < 0) {
 
                     clearInterval(timer);
-                    document.getElementById(id).innerHTML = '축하해주셔서 감사합니다.';
+                    document.getElementById(id).innerHTML = '<br>축하해주셔서 감사합니다.';
 
                     return;
                 }
@@ -176,10 +176,10 @@
                 var minutes = Math.floor((distance % _hour) / _minute);
                 var seconds = Math.floor((distance % _minute) / _second);
 
-                document.getElementById(id).innerHTML = days + '일 ';
+                document.getElementById(id).innerHTML = '<p style="font-size:48px">결혼 시작까지</p>' + days + '일 ';
                 document.getElementById(id).innerHTML += hours + '시간 ';
                 document.getElementById(id).innerHTML += minutes + '분 ';
-                document.getElementById(id).innerHTML += seconds + '초';
+                document.getElementById(id).innerHTML += seconds + '초' + '<p style="font-size:48px">남았습니다.</p>';
             }
 
         timer = setInterval(showRemaining, 1000);
